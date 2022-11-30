@@ -17,11 +17,15 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter:2.7.5")
+	implementation("org.springframework.boot:spring-boot-starter-jdbc:2.7.5")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.5")
+	implementation("org.springframework.batch:spring-batch-core:4.3.3")
+
 	implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20")
-	implementation("org.springframework.batch:spring-batch-core:4.3.3")
+
+	implementation("com.microsoft.sqlserver:mssql-jdbc")
 	runtimeOnly("com.h2database:h2:2.1.214")
-	testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.5")
 }
 
 tasks.withType<KotlinCompile> {

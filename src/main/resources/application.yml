@@ -1,0 +1,11 @@
+spring:
+  batch:
+    initializer: false
+    jdbc:
+      initialize-schema: never
+  ## Local????SQLServer?????
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;encrypt=false;
+    username: sa
+    password: Password123456789
