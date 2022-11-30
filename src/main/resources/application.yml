@@ -1,8 +1,7 @@
 spring:
   batch:
-    initializer: false
     jdbc:
-      initialize-schema: never
+      initialize-schema: never # ????DB?????? https://spring.pleiades.io/spring-boot/docs/current/reference/html/howto.html#howto.data-initialization.batch
   ## Local????SQLServer?????
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
