@@ -25,7 +25,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20")
 
 	implementation("com.microsoft.sqlserver:mssql-jdbc")
-	runtimeOnly("com.h2database:h2:2.1.214")
+	runtimeOnly("com.h2database:h2:1.4.197")
 }
 
 tasks.withType<KotlinCompile> {
